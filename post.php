@@ -32,36 +32,36 @@ if(isset($_GET['id'])){
                 <p>Odio impedit architecto soluta deserunt id temporibus, est nesciunt enim porro asperiores, inventore recusandae veniam ducimus sequi, a similique praesentium nisi quaerat placeat quis qui molestiae. Minima maxime delectus veniam!</p>
             </p>
         </div>
-    </main>
-    <aside id="nav-container">
-        <h3 id="tags-title">Tags</h3>
-        <ul id="tag-list">
-            <?php
-                foreach($current_post['tags'] as $tag):
-            ?>
-                <li>
-                    <a href=""><?= $tag?>
-                    </a>
-                </li>
-            <?php
-                endforeach;
+        <aside id="nav-container">
+            <h3 id="tags-title">Tags</h3>
+            <ul id="tags-list">
+                <?php
+                    foreach($current_post['tags'] as $tag):
                 ?>
-        </ul>
-        <h3 id="categories-title">categories</h3>
-        <ul id="categories-list">
-            <?php
-                foreach($categories as $categorie):
-            ?>
-                <li>
-                    <a href=""><?= $categorie?>
-                    </a>
-                </li>
-            <?php
-                endforeach;
-            ?>
-        </ul>
-
-    </aside>
+                    <li>
+                        <a href=""><?= $tag?>
+                        </a>
+                    </li>
+                <?php
+                    endforeach;
+                    ?>
+            </ul>
+            <h3 id="categories-title">categories</h3>
+            <ul id="categories-list">
+                <?php
+                    foreach($categories as $categorie):
+                ?>
+                    <li>
+                        <a href=""><?= $categorie?>
+                        </a>
+                    </li>
+                <?php
+                    endforeach;
+                ?>
+            </ul>
+    
+        </aside>
+    </main>
 <?php
 
 include_once("templates/footer.php");

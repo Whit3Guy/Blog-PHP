@@ -54,7 +54,7 @@ body{
   color: #999;
 
 }
-/* Home */
+/* HOME */
 
 .title-container{
   text-align: center;
@@ -128,7 +128,7 @@ body{
 
 
 
-/* footer */
+/* FOOTER */
 footer{
   width: 100%;
   position: absolute;
@@ -137,5 +137,79 @@ footer{
   background-color: #161616;
   color: aliceblue;
   padding: 20px 0 ;
+;
 }
 
+/* POST */
+
+.post-containers{
+  display: grid;
+  grid-template-columns: 75% 25%;
+  grid-row: auto;
+  grid-template-areas: "main sidebar";
+  grid-gap: 10px;
+  padding-top: 30px ;
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-bottom: 250px
+}
+
+.content-container{
+  grid-area: main ;
+
+}
+
+.post-content{
+  line-height: 1.8;
+  margin: 10px 0;
+}
+
+.img-container{
+  margin-bottom: 30px;
+}
+
+.img-container img{
+  width: 60%;
+}
+
+#main-title{
+  font-size: 30px;
+  margin-bottom: 30px;
+}
+
+#post-description{
+  font-style: italic;
+  margin-bottom: 40px;
+}
+
+/* POST-ASIDE */
+.nav-conteiner{
+  grid-area: sidebar;
+
+}
+
+#tags-title, #categories-title{
+ font-size: 24px;
+ margin-bottom: 10px;
+ background-color: #000;
+ color: aliceblue;
+ text-align: center;
+ padding: 10px;
+ font-weight: 300;
+}
+
+#tags-list, #categories-list{
+list-style: none;
+font-size: 16px;
+
+}
+#tags-list li, #categories-list li{
+margin-bottom: 10px;
+}
+#tags-list a, #categories-list a{
+color: #000;
+transition: .5s;
+}
+#tags-list a:hover, #categories-list a:hover{
+color: #838383;
+}
